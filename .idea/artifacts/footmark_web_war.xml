@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="footmark-web:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="footmark-web.war">
+      <element id="artifact" artifact-name="footmark-web:war exploded" />
+    </root>
+  </artifact>
+</component>
