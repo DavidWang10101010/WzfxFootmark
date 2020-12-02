@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>首 页</title>
+    <!--网页icon-->
+    <link href="static/img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- 告诉浏览器响应屏幕宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="static/assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-image: url(static/img/rose_star.jpg)">
+<!--导航栏-->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <!-- 导航栏头部 -->
+        <div class="navbar-header" style="margin-top: 0px;">
+            <a href="index.html"><img src="static/img/logo.jpg" class="img-responsive center-block"></a>
+        </div>
+        <!-- 导航栏：菜单 -->
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><b>首 页</b></a></li>
+                <li><a href="#"><b>回 忆</b></a></li>
+                <li><a href="#"><b>关 于</b></a></li>
+            </ul>
+        </div>
+        <!--导航栏：登陆、注册-->
+        <div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><img src="static/img/user.jpg" class="img-circle center-block"></li>
+                <li><a href="javascript:void(0);" onclick="toWelcome('login')"><b>登 陆</b></a></li><b>&nbsp;|&nbsp;</b>
+                <li><a href="javascript:void(0);" onclick="toWelcome('register')"><b>注 册</b></a></li><b>&nbsp;&nbsp;</b>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--中间容器-->
+<div class="container">
+
+</div>
+
+<!--底部导航栏-->
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container-fluid">
+        <p class="text-center" style="margin-bottom: 0px;">技术支持电话：17839227013</p>
+        <p class="text-center text-muted"><small class="text-right">©2020 Footmark 2020-2025</small></p>
+    </div>
+</nav>
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="static/assets/jQuery/jQuery-2.2.0.min.js"></script>
+<script src="static/assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script>
+    function toWelcome(name) {
+        console.log("当前执行的方法是："+name);
+        window.location.href = "page/welcome/welcome.html?wc="+name;
+    }
+</script>
+</body>
+</html>
